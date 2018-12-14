@@ -154,6 +154,10 @@ Lastly, we're left with ```return 1 + 1``` from our function, making our final r
   ===========================================
 ```
 
-And that makes sense because if we use 3 digits,
-
-0 1 1 2 3
+And that makes sense because our 3 index in a fibonacci sequence (starting with 0), is 2
+```
+0: 0
+1: 1
+2: 1
+3: 2
+```
