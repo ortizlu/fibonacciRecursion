@@ -11,7 +11,7 @@ function fibonacci(3) {
 }
 ```
 
-So above our first function in the stack has 3 as our example. Before we add the final solution, the function has to be called twice with (2) and (1) because of this line:
+Our first function in the stack uses 3 as our example. Before we add the final solution, the function has to be called twice with (2) and (1) because of this line:
 ```return fibonacci(3 - 1) + fibonacci(3 - 2)```
 
 ```
