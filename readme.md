@@ -1,4 +1,5 @@
 # Fibonacci Sequence with Recursion
+This is a walkthrough of a fibonacci function being invoked with the number 3. By seeing each individual step and visualizing it, one is able to get a better understanding of how recursive functions work. Credit for the functions goes to Adam Coder in [Youtube](https://www.youtube.com/watch?v=fTKROPcI1gE)
 
 ### First Stack
 ```js
