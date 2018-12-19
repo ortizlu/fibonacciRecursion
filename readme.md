@@ -190,14 +190,28 @@ function fibonacciNoRecursion(3, [0,1]) {
 
   //a for loop is set, with i = 2 and the condition being i <= n which is 3
   for(let i = 2; i <= 3; i++) {
-    //1. a = arr[2]
+    //1. since i = 2, a = arr[1] which is 1
+    //2. since i = 3, a = arr[2] which is 1 (because of the previous push)
+    //3. since i = 4, function stops. final value of arr = [0, 1, 1, 2]
     let a = arr[i - 1]
+    //1. since i = 2, b = arr[0] which is 0
+    //2. since i = 3, b = arr[1] which is 1
     let b = arr[i - 2]
+    //1. arr.push(1 + 0) = arr.push(1)
+    //2. arr.push(1 + 1) = arr.push(2)
     arr.push(a + b)
   }
 
+  //setting up the "hash table"
+  //loop through array
   for(let e in arr) {
+    //1. add a new property to the table with the property name '0' (because counter is currently at 0), and the arr[e] = 0 because its the first number in the arr array
+    //2. add a new property to the table named '1' (because counter just incremented to 1).
+    //table[1] = arr[1]
+    //3. It goes on and on, adding the index and value of that index in the object "hash table"
     table[counter] = arr[e]
+    //1. add one to the counter
+    //2. add one to the counter
     counter++
   }
 
