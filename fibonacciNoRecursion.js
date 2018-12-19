@@ -1,5 +1,5 @@
-function fibonacciNoRecursion(n) {
-  const arr = [0,1]
+function fibonacciNoRecursion(n, signature) {
+  const arr = signature
   const table = {}
   let counter = 0
 
@@ -17,4 +17,4 @@ function fibonacciNoRecursion(n) {
   return table
 }
 
-console.log(fibonacciNoRecursion(5))
+console.log(fibonacciNoRecursion(3, [0, 1]))

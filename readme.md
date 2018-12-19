@@ -1,5 +1,5 @@
 # Fibonacci Sequence with Recursion
-This is a walkthrough of a fibonacci function being invoked with the number 3. By seeing each individual step and visualizing it, one is able to get a better understanding of how recursive functions work. Credit for the functions goes to Adam Coder in [Youtube](https://www.youtube.com/watch?v=fTKROPcI1gE)
+This is a walkthrough of a fibonacci function being invoked with the number 3. By seeing each individual step and visualizing it, one is able to get a better understanding of how recursive functions work. Credit for the functions goes to Adam Coder on [Youtube](https://www.youtube.com/watch?v=fTKROPcI1gE)
 
 ### First Stack
 ```js
@@ -162,3 +162,32 @@ And that makes sense because our 3 index in a fibonacci sequence (starting with 
 2: 1
 3: 2
 ```
+
+**************************************************************************************
+
+# Fibonacci Sequence without Recursion
+
+this is the second example of how a fibonacci sequence would be accomplished without recursion.
+
+```js
+function fibonacciNoRecursion(3, [0,1]) {
+  const arr = [0,1]
+  const table = {}
+  let counter = 0
+
+  for(let i = 2; i <= 3; i++) {
+    let a = arr[i - 1]
+    let b = arr[i - 2]
+    arr.push(a + b)
+  }
+
+  for(let e in arr) {
+    table[counter] = arr[e]
+    counter++
+  }
+
+  return table
+}
+
+console.log(fibonacciNoRecursion(3))
+```js
